@@ -1,3 +1,7 @@
+provider "aws" {
+  region ="eu-west-2"
+}
+
 # Create a new VPC to launch our instances into
 resource "aws_vpc" "custom" {
   cidr_block           = var.vpc_cidr

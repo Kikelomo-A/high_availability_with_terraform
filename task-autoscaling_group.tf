@@ -1,3 +1,7 @@
+provider "aws" {
+    region = "eu-west-2"
+}
+
 resource "aws_autoscaling_group" "autoscaling" {
   desired_capacity          = 2
   max_size                  = 5
